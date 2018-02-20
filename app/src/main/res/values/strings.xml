@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Medicacion</string>
+    <string name="local_service_started" />
+    <string name="hint_text">Nombre del medicamento</string>
+    <string name="turn_on">Poner alarma</string>
+    <string name="turn_off">Quitar alarma</string>
+    <string name="empty">Debe introducir un medicamento</string>
+</resources>

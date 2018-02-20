@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:targetApi="M"
+    tools:context="com.example.gonza.medicacion.MainActivity">
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:headerBackground="@android:color/holo_blue_dark"
+        android:numbersBackgroundColor="?attr/colorButtonNormal"
+        android:numbersSelectorColor="@android:color/holo_blue_dark"
+        tools:timePickerMode="clock" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_picker"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:maxLines="1"
+        android:text=""
+        android:hint="@string/hint_text"/>
+
+    <Button
+        android:id="@+id/set_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/edit_text"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/turn_on"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/turn_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/edit_text"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/turn_off"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/turn_off"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
